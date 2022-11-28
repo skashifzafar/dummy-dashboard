@@ -26,6 +26,26 @@ body{
 #l_bar{
     grid-area: 1/1/4/2;
     background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 2fr;
+}
+#logo{
+    grid-row: 1/1
+}
+#bart{
+    grid-row: 2/3;
+}
+#barb{
+    grid-row: 3/4;
+}
+#l_bar>div{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#l_bar>div>div{
+    display: flex;
+    gap: 2px;
 }
 #r_bar{
     grid-area: 3/3/4/4;
