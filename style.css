@@ -1,0 +1,37 @@
+@font-face { font-family: Delicious; src: url('font/Dosis-VariableFont_wght.ttf'); } 
+:root{
+    font-family: Delicious;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    /*grid-template-rows: 20vh 80vh;
+    grid-template-columns: 20vw 60vw 20vw;*/
+    grid-template-rows: 10vh 10vh 80vh;
+    grid-template-columns: 15vw 70vw 15vw;
+    resize: both;
+    
+}
+#header1{
+    grid-area: 1/2/2/4;
+    background-color: aqua;
+}
+#header2{
+    grid-area: 2/2/3/4;
+    background-color: pink;
+}
+#l_bar{
+    grid-area: 1/1/4/2;
+    background-color: blue;
+}
+#r_bar{
+    grid-area: 3/3/4/4;
+    background-color: blueviolet;
+}
+#main{
+    grid-area: 3/2/4/3;
+    background-color:red;
+}
