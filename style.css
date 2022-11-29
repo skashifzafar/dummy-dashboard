@@ -27,10 +27,15 @@ body{
     grid-area: 1/1/4/2;
     background-color: blue;
     display: grid;
-    grid-template-rows: 1fr 4fr 4fr 2fr;
+    grid-template-rows: 2fr 4fr 4fr 2fr;
+    color: aliceblue;
+    gap: 10vh;
+    
 }
 #logo{
-    grid-row: 1/1
+    grid-row: 1/1;
+    font-size: 30px;
+    font-weight: bolder;
 }
 #bart{
     grid-row: 2/3;
@@ -45,7 +50,7 @@ body{
 }
 #l_bar>div>div{
     display: flex;
-    gap: 2px;
+    gap: 2px; 
 }
 #r_bar{
     grid-area: 3/3/4/4;
