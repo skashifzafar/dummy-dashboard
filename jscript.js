@@ -43,7 +43,7 @@ for(var i=0;i<l_arrb.length;i++){
 l_bar.appendChild(logo_div)
 l_bar.appendChild(bart)
 l_bar.appendChild(barb)
-//Header
+//Header1
 const but_ser=document.createElement('img')
 but_ser.alt='sl'
 but_ser.id='sl'
@@ -55,15 +55,45 @@ notif.id='nl'
 const head_logo=document.createElement('img')
 head_logo.alt='hl'
 head_logo.id='hl'
-const user=document.createElement('div')
-user.id='user'
-user.alt='user'
-user.innerHTML='SKZ'
-const header=document.querySelector('#header1')
-header.appendChild(but_ser)
-header.appendChild(fld_ser)
-header.appendChild(notif)
-header.appendChild(head_logo)
-header.appendChild(user)
-
-
+const user1=document.createElement('div')
+user1.id='user1'
+user1.alt='user1'
+user1.innerHTML='Syed Kashif Zafar'
+const header1=document.querySelector('#header1')
+header1.appendChild(but_ser)
+header1.appendChild(fld_ser)
+header1.appendChild(notif)
+header1.appendChild(head_logo)
+header1.appendChild(user1)
+//Header2
+const header2=document.querySelector('#header2')
+const h2_logo=document.createElement('img')
+h2_logo.id='lh2'
+h2_logo.alt='Logo H2'
+const grt=document.createElement('div')
+grt.innerHTML='Hi there,'
+grt.id='grt'
+const user2=document.createElement('div')
+user2.id='user2'
+user2.alt='user2'
+user2.innerHTML='Syed Kashif Zafar'
+const handle=document.createElement('a')
+handle.innerHTML='(@skz)'
+handle.id='handle'
+handle.href='123'
+const but_new=document.createElement('button')
+but_new.id='bn'
+but_new.innerHTML='New'
+const but_up=document.createElement('button')
+but_up.innerHTML='Upload'
+but_up.id='bu'
+const but_sh=document.createElement('button')
+but_sh.id='bs'
+but_sh.innerHTML='Share'
+header2.appendChild(h2_logo)
+header2.appendChild(grt)
+header2.appendChild(user2)
+header2.appendChild(handle)
+header2.appendChild(but_new)
+header2.appendChild(but_up)
+header2.appendChild(but_sh)
