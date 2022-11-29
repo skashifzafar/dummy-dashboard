@@ -60,3 +60,30 @@ body{
     grid-area: 3/2/4/3;
     background-color:red;
 }
+#header1{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+#sl{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#sf{
+    grid-column: 6/14;
+    grid-row: 2/4;
+    border-radius: 10px;
+}
+#nl{
+    grid-column: 17/18;
+    grid-row: 2/3;
+}
+#hl{
+    grid-column: 19/20;
+    grid-row: 2/3;
+}
+#user{
+    grid-column: 20/21;
+    grid-row: 2/3;
+}
+

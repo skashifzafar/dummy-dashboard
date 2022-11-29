@@ -1,3 +1,4 @@
+//Sidebar
 const l_arrt=['Home','Profile','Messages','History','Tasks','Communities']
 const l_arrb=['Settings','Support','Privacy']
 const l_bar=document.querySelector('#l_bar')
@@ -42,3 +43,27 @@ for(var i=0;i<l_arrb.length;i++){
 l_bar.appendChild(logo_div)
 l_bar.appendChild(bart)
 l_bar.appendChild(barb)
+//Header
+const but_ser=document.createElement('img')
+but_ser.alt='sl'
+but_ser.id='sl'
+const fld_ser=document.createElement('input')
+fld_ser.id='sf'
+const notif=document.createElement('img')
+notif.alt='nl'
+notif.id='nl'
+const head_logo=document.createElement('img')
+head_logo.alt='hl'
+head_logo.id='hl'
+const user=document.createElement('div')
+user.id='user'
+user.alt='user'
+user.innerHTML='SKZ'
+const header=document.querySelector('#header1')
+header.appendChild(but_ser)
+header.appendChild(fld_ser)
+header.appendChild(notif)
+header.appendChild(head_logo)
+header.appendChild(user)
+
+
