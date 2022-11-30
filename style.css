@@ -17,8 +17,9 @@ body{
 }
 
 #l_bar{
+    padding-left: 2vw;
     grid-area: 1/1/4/2;
-    background-color: blue;
+    background-color:#0284c7;
     display: grid;
     grid-template-rows: 2fr 4fr 4fr 2fr;
     color: aliceblue;
@@ -47,7 +48,6 @@ body{
 }
 #r_bar{
     grid-area: 3/3/4/4;
-    background-color: blueviolet;
 }
 #main{
     grid-area: 3/2/4/3;
@@ -69,8 +69,7 @@ body{
     grid-column: 6/14;
     grid-row: 2/4;
     border-radius: 10px;
-    border: 5px;
-    border-color: black;
+    background-color: antiquewhite;
 }
 #nl{
     grid-column: 16/17;
@@ -129,4 +128,21 @@ button{
 #bs{
     grid-column: 37/40 ;
     grid-row: 2/4 ;
+}
+#r_bar{
+    padding-left: 2vw;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+}
+#ann{
+    grid-row: 1/8;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#tren{
+    grid-row: 10/20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
