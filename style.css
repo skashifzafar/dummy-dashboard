@@ -83,6 +83,7 @@ body{
 #user1{
     grid-column: 18/21;
     grid-row: 2/3;
+    font-weight: bold;
 }
 #header2{
     grid-area: 2/2/3/4;

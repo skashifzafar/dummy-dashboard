@@ -97,3 +97,52 @@ header2.appendChild(handle)
 header2.appendChild(but_new)
 header2.appendChild(but_up)
 header2.appendChild(but_sh)
+const r_bar=document.querySelector('#r_bar')
+const ann=document.createElement('div')
+ann.innerHTML='Announcement'
+ann.id='ann'
+const ann_arr=['Site Maintainence','Community Share day','Updated Privacy Policy']
+for (var i=0;i<ann_arr.length;i++){
+    const ann_div=document.createElement('div')
+    ann_div.id=ann_arr[i].substring(0,3).toLowerCase()
+    ann_div.innerHTML=ann_arr[i]
+    ann.appendChild(ann_div)
+}
+const tren=document.createElement('div')
+tren.id='tren'
+tren.innerHTML='Trending'
+const tren_user=['tegan','morgan','kendal','alex']
+const user_quote=['World Peace Builder','Super Cool Project','Life Changing App','No Traffic Maker']
+for (var i=0;i<tren_user.length;i++){
+    const user_div=document.createElement('div')
+    const user_name=document.createElement('a')
+    const user_quo=document.createElement('div')
+    const user_logo=document.createElement('img')
+    user_name.innerHTML='@'.concat(tren_user[i])
+    user_quo.innerHTML=user_quote[i]
+    user_logo.alt=tren_user[i].substring(0,2).toLowerCase()
+    user_div.id=tren_user[i]
+    user_name.id=tren_user[i].concat('_user')
+    user_logo.id=tren_user[i].concat('_logo')
+    user_quo.id=tren_user[i].concat('_quo')
+    user_div.appendChild(user_logo)
+    user_div.appendChild(user_name)
+    user_div.appendChild(user_quo)
+    tren.appendChild(user_div)
+}
+r_bar.appendChild(ann)
+r_bar.appendChild(tren)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
