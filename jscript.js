@@ -4,25 +4,19 @@ const l_arrb=['Settings','Support','Privacy']
 const l_bar=document.querySelector('#l_bar')
 const logo_div=document.createElement('div')
 const logo_div2=document.createElement('div')
-const logo=document.createElement('div')
-logo_div.id='logo'
+const logo=document.createElement('span')
+logo_div.classList='icon logo icon-48'
 logo.innerHTML='Dashboard'
-const logo_img=document.createElement('img')
-logo_img.alt='logo';
-logo_div2.appendChild(logo_img)
 logo_div2.appendChild(logo)
 logo_div.appendChild(logo_div2)
 const bart=document.createElement('div')
 bart.id='bart'
 for(var i=0;i<l_arrt.length;i++){
     const bar_div=document.createElement('div')
-    bar_div.id=l_arrt[i].substring(0,3).toLowerCase()
-    const bar_logo=document.createElement('img')
-    bar_logo.alt=l_arrt[i].substring(0,3).toLowerCase()
+    bar_div.classList=l_arrt[i].substring(0,3).toLowerCase()+'  icon icon-24';
     const bar_text=document.createElement('div')
     //bar_div.id=l_arrt[i].substring(0,3).toLowerCase()
     bar_text.innerHTML=l_arrt[i]
-    bar_div.appendChild(bar_logo)
     bar_div.appendChild(bar_text)
     bart.appendChild(bar_div)
 }
@@ -30,13 +24,10 @@ const barb=document.createElement('div')
 barb.id='barb'
 for(var i=0;i<l_arrb.length;i++){
     const bar_div=document.createElement('div')
-    bar_div.id=l_arrb[i].substring(0,3).toLowerCase()
-    const bar_logo=document.createElement('img')
-    bar_logo.alt=l_arrb[i].substring(0,3).toLowerCase()
+    bar_div.classList=l_arrb[i].substring(0,3).toLowerCase()+'  icon icon-24';
     const bar_text=document.createElement('div')
     //bar_div.id=l_arrt[i].substring(0,3).toLowerCase()
     bar_text.innerHTML=l_arrb[i]
-    bar_div.appendChild(bar_logo)
     bar_div.appendChild(bar_text)
     barb.appendChild(bar_div)
 }
@@ -44,17 +35,14 @@ l_bar.appendChild(logo_div)
 l_bar.appendChild(bart)
 l_bar.appendChild(barb)
 //Header1
-const but_ser=document.createElement('img')
-but_ser.alt='sl'
-but_ser.id='sl'
+const but_ser=document.createElement('div')
+but_ser.classList='sl icon icon-48'
 const fld_ser=document.createElement('input')
 fld_ser.id='sf'
-const notif=document.createElement('img')
-notif.alt='nl'
-notif.id='nl'
-const head_logo=document.createElement('img')
-head_logo.alt='hl'
-head_logo.id='hl'
+const notif=document.createElement('div')
+notif.classList='nl icon icon-48'
+const head_logo=document.createElement('div')
+head_logo.classList='hl icon icon-48'
 const user1=document.createElement('div')
 user1.id='user1'
 user1.alt='user1'
@@ -67,9 +55,8 @@ header1.appendChild(head_logo)
 header1.appendChild(user1)
 //Header2
 const header2=document.querySelector('#header2')
-const h2_logo=document.createElement('img')
-h2_logo.id='lh2'
-h2_logo.alt='Logo H2'
+const h2_logo=document.createElement('div')
+h2_logo.classList='lh2 icon icon-48'
 const grt=document.createElement('div')
 grt.innerHTML='Hi there,'
 grt.id='grt'
@@ -124,15 +111,11 @@ for (var i=0;i<tren_user.length;i++){
     const user_main=document.createElement('div')
     const user_name=document.createElement('a')
     const user_quo=document.createElement('div')
-    const user_logo=document.createElement('img')
     user_name.innerHTML='@'.concat(tren_user[i])
     user_quo.innerHTML=user_quote[i]
-    user_logo.alt=tren_user[i].substring(0,2).toLowerCase()
-    user_main.id=tren_user[i]
+    user_main.classList=tren_user[i]+' icon icon-36'
     user_name.id=tren_user[i].concat('_user')
-    user_logo.id=tren_user[i].concat('_logo')
     user_quo.id=tren_user[i].concat('_quo')
-    user_main.appendChild(user_logo)
     user_main.appendChild(user_name)
     user_main.appendChild(user_quo)
     user_div.appendChild(user_main)
@@ -156,8 +139,9 @@ for (var i=0;i<proj_name.length;i++){
     proj_div.appendChild(proj_de)
     const logo_div=document.createElement('div')
     for (var j=0;j<proj_logo.length;j++){
-        const plogo=document.createElement('img')
+        const plogo=document.createElement('div')
         plogo.alt=proj_logo[j]
+        plogo.classList=proj_logo[j]+' icon icon-24'
         logo_div.appendChild(plogo)
     }
     proj_div.appendChild(logo_div)
