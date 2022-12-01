@@ -103,42 +103,67 @@ ann.innerHTML='Announcement'
 ann.id='ann'
 const ann_arr=['Site Maintainence','Community Share day','Updated Privacy Policy']
 const ann_det=['This is first dummy detail','This is second dummy detail','This is thrid dummy detail']
+const ann_div=document.createElement('div')
 for (var i=0;i<ann_arr.length;i++){
-    const ann_div=document.createElement('div')
+    const ann_head=document.createElement('div')
     const ann_detail=document.createElement('div')
     ann_detail.innerHTML=ann_det[i]
-    ann_div.id=ann_arr[i].substring(0,3).toLowerCase()
-    ann_div.innerHTML=ann_arr[i]
-    ann_div.appendChild(ann_detail)
-    ann.appendChild(ann_div)
+    ann_head.id=ann_arr[i].substring(0,3).toLowerCase()
+    ann_head.innerHTML=ann_arr[i]
+    ann_head.appendChild(ann_detail)
+    ann_div.appendChild(ann_head)
 }
+ann.appendChild(ann_div)
 const tren=document.createElement('div')
 tren.id='tren'
 tren.innerHTML='Trending'
 const tren_user=['tegan','morgan','kendal','alex']
 const user_quote=['World Peace Builder','Super Cool Project','Life Changing App','No Traffic Maker']
+const user_div=document.createElement('div')
 for (var i=0;i<tren_user.length;i++){
-    const user_div=document.createElement('div')
+    const user_main=document.createElement('div')
     const user_name=document.createElement('a')
     const user_quo=document.createElement('div')
     const user_logo=document.createElement('img')
     user_name.innerHTML='@'.concat(tren_user[i])
     user_quo.innerHTML=user_quote[i]
     user_logo.alt=tren_user[i].substring(0,2).toLowerCase()
-    user_div.id=tren_user[i]
+    user_main.id=tren_user[i]
     user_name.id=tren_user[i].concat('_user')
     user_logo.id=tren_user[i].concat('_logo')
     user_quo.id=tren_user[i].concat('_quo')
-    user_div.appendChild(user_logo)
-    user_div.appendChild(user_name)
-    user_div.appendChild(user_quo)
-    tren.appendChild(user_div)
+    user_main.appendChild(user_logo)
+    user_main.appendChild(user_name)
+    user_main.appendChild(user_quo)
+    user_div.appendChild(user_main)
 }
+tren.appendChild(user_div)
 r_bar.appendChild(ann)
 r_bar.appendChild(tren)
 
-
-
+const main=document.querySelector('#main')
+main.innerHTML='Your Projects'
+const proj_name=['Super Cool Project','Less Cool Project','Impossible App','Easy Peasy App','Ad Blocker','Money Maker']
+const proj_desc=['sfhaskcsklflcflsckmlcfelc,mlc','dsjdvkscnamcawkjfiwfjakncasknaknsc','efijjskdncaskckacnaklcam','casjkcfanknffcascma,msvnakvn','sifjkncaijwfyegahsknxvkjfijaihoc','iawuqwfinxAODUFHSA;AJPOGO']
+const projs=document.createElement('div')
+const proj_logo=['star','view','share']
+for (var i=0;i<proj_name.length;i++){
+    const proj_div=document.createElement('div')
+    proj_div.innerHTML=proj_name[i]
+    proj_div.id=proj_name[i].substring(0,3).toLowerCase()
+    const proj_de=document.createElement('div')
+    proj_de.innerHTML=proj_desc[i]
+    proj_div.appendChild(proj_de)
+    const logo_div=document.createElement('div')
+    for (var j=0;j<proj_logo.length;j++){
+        const plogo=document.createElement('img')
+        plogo.alt=proj_logo[j]
+        logo_div.appendChild(plogo)
+    }
+    proj_div.appendChild(logo_div)
+    projs.appendChild(proj_div)
+}
+main.appendChild(projs)
 
 
 

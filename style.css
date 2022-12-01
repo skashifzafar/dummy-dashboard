@@ -12,9 +12,9 @@ body{
     grid-template-columns: 20vw 60vw 20vw;*/
     grid-template-rows: 10vh 10vh 80vh;
     grid-template-columns: 20vw 60vw 20vw;
-    resize: both;   
+    resize: both;  
+    background-color: aliceblue; 
 }
-
 #l_bar{
     padding-left: 2vw;
     grid-area: 1/1/4/2;
@@ -49,10 +49,6 @@ body{
 }
 #r_bar{
     grid-area: 3/3/4/4;
-}
-#main{
-    grid-area: 3/2/4/3;
-    background-color:red;
 }
 #header1{
     grid-area: 1/2/2/4;
@@ -131,35 +127,96 @@ button{
     grid-row: 2/4 ;
 }
 #r_bar{
-    padding-left: 2vw;
     display: grid;
     grid-template-rows: repeat(20,1fr);
+    padding: 20px;
 }
 #ann{
-    grid-row: 1/8;
+    grid-row: 2/10;
+    font-size: 2.5vh;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+#ann>div{
+    grid-row: 2/10;
+    height: 70%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: 2.5vh;
-    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 8px -4px;
+    padding:10px;
 }
 #tren{
     grid-row: 10/20;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+#tren>div{
+    height: 70%;
+    grid-row: 2/10;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-#ann>div{
-    font-weight: bold;
-    font-size: 1.5vh;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 8px -4px ;
+    padding: 10px;
 }
 #ann>div>div{
+    font-weight: bold;
+    font-size: 1.5vh;
+    gap: 5px;
+    box-shadow: 0 3px 3px -4px ;
+}
+#ann>div>div>div{
     font-weight: lighter;
 }
 #tren{
     font-size: 2.5vh;
     font-weight: bold;
 }
-#tren>div{
+#tren>div>div{
     font-size: 1.5vh;
+    box-shadow: 0 3px 3px -4px ;
+}
+
+#main{
+    font-size: 2.5vh;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    padding: 10px;
+
+}
+#main>div{
+    grid-row: 2/3;
+    font-size: 2vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,fr);
+    gap: 2vh;
+    padding: 2vh;
+   
+}
+#main>div>div{
+    font-size: 1.5vh;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px -4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#main>div>div>div{
+    font-weight: lighter;
+}
+#main>div>div>div:nth-child(2){
+    background-color: #0284c7;
+    display: flex;
+    justify-content: flex-end;
 }
