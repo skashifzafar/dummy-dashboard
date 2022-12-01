@@ -11,9 +11,8 @@ body{
     /*grid-template-rows: 20vh 80vh;
     grid-template-columns: 20vw 60vw 20vw;*/
     grid-template-rows: 10vh 10vh 80vh;
-    grid-template-columns: 15vw 70vw 15vw;
-    resize: both;
-    
+    grid-template-columns: 20vw 60vw 20vw;
+    resize: both;   
 }
 
 #l_bar{
@@ -24,6 +23,8 @@ body{
     grid-template-rows: 2fr 4fr 4fr 2fr;
     color: aliceblue;
     gap: 10vh;
+    font-size: 2vh;
+    font-weight: bold;
     
 }
 #logo{
@@ -139,10 +140,26 @@ button{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    font-size: 2.5vh;
+    font-weight: bold;
 }
 #tren{
     grid-row: 10/20;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+#ann>div{
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+#ann>div>div{
+    font-weight: lighter;
+}
+#tren{
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+#tren>div{
+    font-size: 1.5vh;
 }

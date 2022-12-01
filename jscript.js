@@ -6,7 +6,7 @@ const logo_div=document.createElement('div')
 const logo_div2=document.createElement('div')
 const logo=document.createElement('div')
 logo_div.id='logo'
-logo.innerHTML='Logo'
+logo.innerHTML='Dashboard'
 const logo_img=document.createElement('img')
 logo_img.alt='logo';
 logo_div2.appendChild(logo_img)
@@ -102,15 +102,13 @@ const ann=document.createElement('div')
 ann.innerHTML='Announcement'
 ann.id='ann'
 const ann_arr=['Site Maintainence','Community Share day','Updated Privacy Policy']
-const ann_det=['Thsi is first dummy detail','This is second dummy detail','This is thrid dummy detail']
+const ann_det=['This is first dummy detail','This is second dummy detail','This is thrid dummy detail']
 for (var i=0;i<ann_arr.length;i++){
     const ann_div=document.createElement('div')
-    const ann_name=document.createElement('div')
     const ann_detail=document.createElement('div')
     ann_detail.innerHTML=ann_det[i]
-    ann_name.id=ann_arr[i].substring(0,3).toLowerCase()
-    ann_name.innerHTML=ann_arr[i]
-    ann_div.appendChild(ann_name)
+    ann_div.id=ann_arr[i].substring(0,3).toLowerCase()
+    ann_div.innerHTML=ann_arr[i]
     ann_div.appendChild(ann_detail)
     ann.appendChild(ann_div)
 }
